@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.switch{
+    position: relative;
+    width: 12rem;
+    height: 3rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.switch input{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.switch span{
+    position: absolute;
+    width: 6rem;
+    height: 3rem;
+    left: 0;
+    background-color: #187498;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.switch p{
+    position: absolute;
+    top: 0;
+    width: 6rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    transition: 0.2s;
+}
+.switch .accel{
+    color: white;
+    left: 0;
+}
+.switch .speed{
+    color: black;
+    left: 6rem;
+}
+
+.switch input:checked ~ span{
+    left: 6rem;
+}
+.switch input:checked ~ .accel{
+    color: black;
+}
+.switch input:checked ~ .speed{
+    color: white;
+}

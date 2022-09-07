@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#testBox{
+    position: relative;
+    width: 90px;
+    height: 160px;
+    background-image: url("https://blog.kakaocdn.net/dn/bnt3gv/btqYrFrmcYb/7dfbUOyUcFfaR5IRPigUnk/img.jpg");
+    background-size: cover;
+}

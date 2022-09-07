@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <title>Interaction</title>
+
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+    </head>
+
+
+
+    <body>
+        <main>
+            <div class="container focus">
+                <p class="title">Interaction</p>
+                <div class="content">
+                    <h3>인터랙션</h3>
+                    <p>여러 센서들의 작동방법을 확인해보세요!</p>
+                </div>
+                <a href="#accelerometer" class="btn-scroll">
+                    scroll right
+                    <img src="./resources/arrow.svg">
+                </a>
+            </div>
+
+
+            <div id="accelerometer" class="container">
+                <p class="title">Accelerometer</p>
+                <div class="content">
+                    <h3>가속도계</h3>
+                    <img src="./resources/acc.png">
+                    <p>핸드폰의 가속도를 측정합니다.</p>
+                </div>
+                <div onclick="pageTransition(this, './accelerometer')" class="link">try it now</div>
+                <div class="transition"></div>
+            </div>
+
+
+            <div class="container">
+                <p class="title">Gyroscope</p>
+                <div class="content">
+                    <h3>자이로스코프 센서</h3>
+                    <img src="./resources/gyro.png">
+                    <p>핸드폰의 방향을 측정합니다.</p>
+                </div>
+                <!-- <a href="./gyro_new/" class="link">try it now</a> -->
+                <div onclick="pageTransition(this, './gyroscope')" class="link">try it now</div>
+                <div class="transition"></div>
+            </div>
+
+
+            <div class="container">
+                <p class="title">Tree</p>
+                <div class="content">
+                    <h3>랜덤 나무 생성기</h3>
+                    <img src="./resources/tree.png">
+                    <p>Inspired by <a href="https://youtu.be/cpEeqACsF_Q?t=300">Interactive Developer</a></p>
+                    <p>무작위 모양의 나무가 자라는 모습을 보여줍니다.</p>
+                </div>
+                <!-- <a href="./gyro_new/" class="link">try it now</a> -->
+                <div onclick="pageTransition(this, './tree')" class="link">try it now</div>
+                <div class="transition"></div>
+            </div>
+        </main>
+
+
+        <div class="indicator">
+            <div class="selection"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>
