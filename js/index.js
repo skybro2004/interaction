@@ -22,8 +22,10 @@ main.addEventListener("scroll", function() {
 
 
 function pageTransition(element, url){
-    element.classList.add("change")
-    setTimeout(() => {
-        location.href = url
-    }, 1000);
+    // element.classList.add("change")
+    // setTimeout(() => {
+    //     location.href = url
+    // }, 1000);
+
+    location.href = url
 }
